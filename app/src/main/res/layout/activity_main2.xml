@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Chat Room"
+        android:textSize="20dp"
         android:gravity="center"/>
 
     <com.airbnb.lottie.LottieAnimationView
@@ -37,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="News"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textSize="20dp"/>
 
 </LinearLayout>
