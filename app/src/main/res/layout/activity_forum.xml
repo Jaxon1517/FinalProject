@@ -17,17 +17,17 @@
             android:layout_width="match_parent"
             android:layout_height="609dp">
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/plus_button" />
         </ListView>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginBottom="0dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/plus_button" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
