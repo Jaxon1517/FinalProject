@@ -24,7 +24,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (clicked = true){
-                    Intent intent = new Intent( Main2Activity.this, forumPosts.class);
+                    Intent intent = new Intent( Main2Activity.this, makePost.class);
                     startActivity(intent);
                     clicked = true;
                 }
@@ -36,7 +36,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (clickedChat = true){
-                    Intent intent = new Intent( Main2Activity.this, MainActivity.class);
+                    Intent intent = new Intent( Main2Activity.this, chat.class);
                     startActivity(intent);
                     clickedChat = true;
                 }
