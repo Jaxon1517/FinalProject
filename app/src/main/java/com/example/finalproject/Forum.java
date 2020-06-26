@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -24,8 +25,9 @@ import java.util.ArrayList;
      ChildEventListener PostsEventListener;
      ForumPostAdapter ForumPostsAdapter;
      ArrayList<forumPosts> Posts = new ArrayList<>();
+     boolean clicked = false;
 
-    @Override
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forum);
@@ -57,13 +59,25 @@ import java.util.ArrayList;
             }
         });
 
+        final LottieAnimationView lottieClickFloat = findViewById(R.id.lottieClickFloat);
+        lottieClickFloat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clicked = true){
+                    Intent intent = new Intent( Forum.this, makePost.class);
+                    startActivity(intent);
+                    clicked = false;
+                }
+            }
+        });
+
 
     }
 
-    public void floatButt(View view){
-        Intent intent = new Intent( this, makePost.class);
-        startActivity(intent);
-    }
+    //public void floatButt(View view){
+    //    Intent intent = new Intent( this, makePost.class);
+    //    startActivity(intent);
+    //}
 
 
 }

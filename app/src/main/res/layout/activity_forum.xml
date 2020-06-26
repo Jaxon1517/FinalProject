@@ -24,7 +24,7 @@
         android:gravity="right"
         android:orientation="vertical">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -34,7 +34,15 @@
             android:layout_marginBottom="0dp"
             android:clickable="true"
             android:onClick="floatButt"
-            app:srcCompat="@drawable/plus_button" />
+            app:srcCompat="@drawable/plus_button" />-->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieClickFloat"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/addbtn"
+            />
 
     </LinearLayout>
 </LinearLayout>
