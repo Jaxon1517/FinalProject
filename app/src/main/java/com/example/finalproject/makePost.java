@@ -10,10 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
-
 public class makePost extends AppCompatActivity {
-    ArrayList<forumPosts> Posts = new ArrayList<>();
     EditText TitleView;
     EditText PostView;
     DatabaseReference databasePosts;
@@ -36,8 +33,6 @@ public class makePost extends AppCompatActivity {
          TitleView.setText("");
          String post = PostView.getText().toString();
          PostView.setText("");
-         Posts.add(new com.example.finalproject.forumPosts(title, post));
-
         Intent intent = new Intent( this, Forum.class);
         startActivity(intent);
 
