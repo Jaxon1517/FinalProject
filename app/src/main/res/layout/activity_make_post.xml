@@ -51,24 +51,24 @@
         tools:visibility="visible" />
 
 
-    <Button
-        android:id="@+id/SendView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieClickSend"
+        android:layout_width="173dp"
+        android:layout_height="80dp"
         android:layout_marginStart="161dp"
         android:layout_marginLeft="161dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="162dp"
         android:layout_marginRight="162dp"
         android:layout_marginBottom="85dp"
-        android:onClick="sendMessage"
-        android:text="Send"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PostView"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.282"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/sendpls" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieClickImg"
