@@ -12,24 +12,25 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
-        android:background="#fe5f55"
+        android:background="#DD2F38"
         android:cacheColorHint="#00000000" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".5"
-        android:background="#fe5f55">
+        android:background="#DD2F38">
 
         <EditText
             android:id="@+id/edit_text"
             android:layout_width="311dp"
             android:layout_height="43dp"
+            android:layout_margin="10dp"
             android:layout_gravity="center_vertical
 "
             android:layout_weight="3"
             android:background="@drawable/search"
-            android:backgroundTint="#ef476f"
+            android:backgroundTint="#FFFFFF"
             android:fontFamily="casual"
             android:textColor="@color/common_google_signin_btn_text_dark_focused"
             android:textStyle="bold" />
