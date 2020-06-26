@@ -20,7 +20,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="Title..."
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -28,6 +28,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Title..."
         tools:visibility="visible" />
+
 
     <EditText
         android:id="@+id/PostView"
@@ -43,16 +44,16 @@
         android:ems="10"
         android:gravity="clip_horizontal"
         android:hint="Write your post here..."
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textMultiLine"
         android:singleLine="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:text="Write your post here..."
         tools:visibility="visible" />
-
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieClickSend"
