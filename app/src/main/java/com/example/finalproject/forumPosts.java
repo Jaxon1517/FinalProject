@@ -1,41 +1,31 @@
 package com.example.finalproject;
 
 public class forumPosts {
-    String name; //username for the authenticated user
-    String text; //the text of the message being sent
-    String profilePic; //profile pic of the authenticated user
+    String Title; //username for the authenticated user
+    String PostMsg; //the text of the message being sent
 
     public forumPosts() {
 
     }
 
-    public forumPosts(String name, String text, String profilePic) {
-        this.name = name;
-        this.text = text;
-        this.profilePic = profilePic;
+    public forumPosts(String Title, String PostMsg) {
+        this.Title = Title;
+        this.PostMsg = PostMsg;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return Title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String Title) {
+        this.Title = Title;
     }
 
-    public String getText() {
-        return text;
+    public String getPostMsg() {
+        return PostMsg;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getProfilePic() {
-        return profilePic;
-    }
-
-    public void setProfilePic(String profilePic) {
-        this.profilePic = profilePic;
+    public void setPostMsg(String PostMsg) {
+        this.PostMsg = PostMsg;
     }
 }

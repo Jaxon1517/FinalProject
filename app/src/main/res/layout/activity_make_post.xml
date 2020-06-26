@@ -20,7 +20,7 @@
             android:orientation="horizontal"></LinearLayout>
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/TitleView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
@@ -30,7 +30,7 @@
             android:text="Title..." />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/PostView"
             android:layout_width="match_parent"
             android:layout_height="117dp"
             android:background="@drawable/border"
@@ -56,10 +56,11 @@
             android:text="Upload Image" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/SendView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="100dp"
+            android:onClick="sendMessage"
             android:text="Send" />
     </LinearLayout>
 

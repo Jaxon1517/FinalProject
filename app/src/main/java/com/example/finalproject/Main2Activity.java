@@ -1,10 +1,10 @@
 package com.example.finalproject;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -24,7 +24,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (clicked = true){
-                    Intent intent = new Intent( Main2Activity.this, makePost.class);
+                    Intent intent = new Intent( Main2Activity.this, Forum.class);
                     startActivity(intent);
                     clicked = true;
                 }
