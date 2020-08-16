@@ -19,6 +19,7 @@ public class ForumPostAdapter extends ArrayAdapter<forumPosts> {
         forumPosts chatMessage = getItem(position);
         TextView messageTextView = convertView.findViewById(R.id.messageTextView);
         messageTextView.setText(chatMessage.getPostMsg());
+
         TextView usernameTextView = convertView.findViewById(R.id.usernameTextView);
         usernameTextView.setText(chatMessage.getTitle());
         //Use a cool circular ImageView for the profile pic. This comes from the library dependecy you imported.
